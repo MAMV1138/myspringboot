@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html >
+    <head>
+        <title>Painting</title>
+    </head>
+    <body>               
+
+        <h1>This is the painting<h1>
+    <div th:switch="${painting}">
+        <div th:case="'mona-lisa'"><img src="images/mona-lisa.jpeg" style="width:300px"></div>
+        <div th:case="'starry-night'"><img src="images/starry-night.jpeg" style="width:300px"></div>
+        <div th:case="*">NO IMAGE</div>
+    </div>
+    </body>
+</html>
